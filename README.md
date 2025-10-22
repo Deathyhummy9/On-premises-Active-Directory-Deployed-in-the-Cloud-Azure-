@@ -73,9 +73,70 @@ The lab simulates a realistic enterprise infrastructure where a Domain Controlle
   powershell ipconfig /all
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+##3. Install Active Directory on DC-1
+<img width="1689" height="1046" alt="Screenshot (119)" src="https://github.com/user-attachments/assets/195403f9-60ac-43fb-8925-2305bec24576" />
+
+Log in to DC-1.
+Install Active Directory Domain Services role.
+Promote the server to a domain controller and create a new forest:
+mydomain.com
+Restart and log in as:
+
+mydomain.com\labuser
+
+##4. Create Domain Admin Account
+<img width="1791" height="1080" alt="Screenshot (120)" src="https://github.com/user-attachments/assets/c06f1216-3620-4143-bc66-5fcf5c5df62e" />
+
+Open Active Directory Users and Computers.
+
+Create Organizational Units:
+_EMPLOYEES
+_ADMINS
+Create user:
+Username: jane_admin
+Password: Cyberlab123$
+Add jane_admin to Domain Admins group.
+Log out and log back in as:
+mydomain.com\jane_admin
+
+
+##5. Join Client-1 to the Domain
+
+Confirm DNS is pointing to DC-1 (already done).
+
+Restart Client-1.
+Log in as labuser (local admin).
+Join Client-1 to:
+mydomain.com
+(Computer will restart.)
+
+Log in to the Domain Controller and verify Client-1 appears in ADUC.
+
+Create a new OU named _CLIENTS and move Client-1 object there.
+
+##6. RDP for Non-Admin Users 
+
+Log in to Client-1 as:
+
+mydomain.com\jane_admin
+
+Open System Properties → Remote Desktop.
+
+Add Domain Users group to RDP permissions.
+
+Now domain users can log in to Client-1 via Remote Desktop.
+---
+##Completion
+Final result after completing this lab:
+
+A fully functional Domain Controller (DC-1) on Windows Server 2022
+
+A domain-joined Windows 10 client (Client-1)
+
+Configured OUs and an administrative account (jane_admin)
+
+Domain Users enabled for Remote Desktop access
+
+Core on-premises Active Directory environment running in Azure
+
+This is a fundamental project for anyone building a career in IT infrastructure 
