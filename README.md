@@ -41,8 +41,9 @@ The lab simulates a realistic enterprise infrastructure where a Domain Controlle
 
 ### 1. Setup Domain Controller (DC-1)
 <p>
-<img width="1415" height="891" alt="Screenshot (112)" src="https://github.com/user-attachments/assets/0bd3b3cd-a153-4251-9324-893fc0890eab" />
-<img width="1428" height="916" alt="Screenshot (113)" src="https://github.com/user-attachments/assets/c7fac4f1-1fa3-4b7f-a661-a7a8c3271899" />
+<img width="1413" height="856" alt="Screenshot (112)" src="https://github.com/user-attachments/assets/3a64dc0d-8217-4226-bf7c-92484702ced8" />
+<img width="1428" height="858" alt="Screenshot (113)" src="https://github.com/user-attachments/assets/9ea28785-462c-47f8-8327-9f95abea3dc6" />
+
 
 
 </p>
