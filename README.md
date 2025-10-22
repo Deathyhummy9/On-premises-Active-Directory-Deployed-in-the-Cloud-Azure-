@@ -57,13 +57,20 @@ The lab simulates a realistic enterprise infrastructure where a Domain Controlle
 - Log in to `DC-1` and disable Windows Firewall (for testing).
 <br />
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+### 2. Setup Client (Client-1)
+<img width="1425" height="856" alt="Screenshot (115)" src="https://github.com/user-attachments/assets/afdd9f13-b72d-4b52-987a-ef67f02e5cad" />
+<img width="1684" height="1048" alt="Screenshot (117)" src="https://github.com/user-attachments/assets/3fff6ebe-75ea-4635-b579-75fb73c19543" />
+<img width="1682" height="1051" alt="Screenshot (118)" src="https://github.com/user-attachments/assets/b544635f-b04e-4632-93a7-df7e729376cc" />
+
+- Deploy a Windows 10 VM named `Client-1`.  
+  - Username: `labuser`  
+  - Password: `Cyberlab123!`  
+- Attach it to the same VNet and region as `DC-1`.  
+- Set Client-1’s DNS to DC-1’s Private IP.  
+- Restart Client-1 from Azure Portal.  
+- Log in and ping DC-1’s private IP.  
+- Verify connectivity:
+  powershell ipconfig /all
 
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
