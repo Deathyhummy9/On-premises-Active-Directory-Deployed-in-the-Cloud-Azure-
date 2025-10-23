@@ -2,7 +2,7 @@
   <img src="https://i.imgur.com/pU5A58S.png" alt="Microsoft Active Directory Logo" width="250"/>
 </p>
 
-# 🖥️ On-Premises Active Directory in the Cloud (Azure)
+# 🖥️ On-Premises Active Directory making infuracture and deployment  in the Cloud (Azure)
 
 This project demonstrates how to deploy and configure an **on-premises Active Directory** environment in the cloud using **Microsoft Azure**.  
 The lab simulates a realistic enterprise infrastructure where a Domain Controller manages authentication and a Windows client is joined to the domain.
